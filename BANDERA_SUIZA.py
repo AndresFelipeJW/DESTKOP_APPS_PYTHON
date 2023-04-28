@@ -17,7 +17,7 @@ from tkinter import *
 ventana_principal = Tk()
 
 # TAMAÑO DE LA VENTANA 
-ventana_principal.geometry("500x500")
+ventana_principal.geometry("600x600")
 
 # TITULO DE VENTANA
 ventana_principal.title("ESPECIALIDAD EN SISTEMAS - GUANENTA")
@@ -26,33 +26,25 @@ ventana_principal.title("ESPECIALIDAD EN SISTEMAS - GUANENTA")
 ventana_principal.resizable(False, False)
 
 # COLOR DE FONDO DE LA VENTANA 
-ventana_principal.config(bg="red")
-
-#-------------------------
-# FRAMA VERDE
-#-------------------------
-frame_verde = Frame(ventana_principal)
-frame_verde.config(bg="green", width=500, height=250)
-frame_verde.place(x=0, y=0)
+ventana_principal.config(bg="red3")
 
 
-#-------------------------
-# FRAMA ROJO
-#-------------------------
-frame_rojo = Frame(ventana_principal)
-frame_rojo.config(bg="red", width=500, height=125)
-frame_rojo.place(x=0, y=250)
 
 #-------------------------
 # FRAMA BLANCO
 #-------------------------
 frame_blanco = Frame(ventana_principal)
-frame_blanco.config(bg="white", width=500, height=125)
-frame_blanco.place(x=0, y=250)
+frame_blanco.config(bg="white", width=100, height=250)
+frame_blanco.place(x=250, y=200)
+
+
+#-------------------------
+# FRAMA BLANCO
+#-------------------------
+frame_blanco = Frame(ventana_principal)
+frame_blanco.config(bg="white", width=250, height=100)
+frame_blanco.place(x=175, y=270)
 
 # run 
 # SE EJECUTA EL METODO MAINLOOP() DE LA CLASE TK() A TRAVES DE LA INSTANCIA DE LA INTANCIA ventana_principal. Este metodo despliega la ventana en pantalla y queda a la espera de le que el usuario haga (click en un boton, escribir, etc). Cada accion del usuario se conoce como unn evento. El método mainloop() es un bucle infinito.
 ventana_principal.mainloop()
-
-
-
